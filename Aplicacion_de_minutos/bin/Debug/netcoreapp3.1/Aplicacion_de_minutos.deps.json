@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aplicacion_de_minutos/1.0.0": {
+        "runtime": {
+          "Aplicacion_de_minutos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aplicacion_de_minutos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
