@@ -9,7 +9,6 @@ namespace Aplicacion_de_minutos
             C_Tigo Tigo = new C_Tigo();
             C_Movistar Movistar = new C_Movistar();
             C_Claro Claro = new C_Claro();
-
             C_Paquetes Paquetes = new C_Paquetes();
 
             int mtigo = Tigo.Tigo_Min;
@@ -129,7 +128,7 @@ namespace Aplicacion_de_minutos
                             }
                             catch
                             {
-                                Console.WriteLine("Por favor digite solo numeros");
+                                Console.WriteLine("Por favor digite solo numeros\n");
                                 Console.Write("Valor de recarga de celular: ");
 
                                 Valor = Console.ReadLine();
@@ -174,7 +173,7 @@ namespace Aplicacion_de_minutos
                             }
                             catch
                             {
-                                Console.WriteLine("Por favor digite solo numeros");
+                                Console.WriteLine("Por favor digite solo numeros\n");
                                 Console.Write("Valor de recarga de celular: ");
 
                                 Valor = Console.ReadLine();
@@ -208,7 +207,7 @@ namespace Aplicacion_de_minutos
                     Console.WriteLine("Paquetes");
 
                     /*valido el numero telefonico*/
-                    Console.Write("¿Cual es su numero celular? ");
+                    Console.Write("¿Cual es su numero celular?\n ");
                     var Num_Celular = Console.ReadLine();
                     bool Evaluar = true;
                     long Nume_Celular = 0;
@@ -229,9 +228,9 @@ namespace Aplicacion_de_minutos
 
                     }
 
-                    Console.Write("Seleccione el tipo de paquete");
-                    Console.Write("(1) Diario");
-                    Console.Write("(2) Mensual");
+                    Console.Write("Seleccione el tipo de paquete\n");
+                    Console.Write("(1) Diario\n");
+                    Console.Write("(2) Mensual\n");
 
                     int Opcion_paquete = Convert.ToInt32(Console.ReadLine());
 
@@ -244,8 +243,8 @@ namespace Aplicacion_de_minutos
                         int Operador = Convert.ToInt32(Console.ReadLine());
                         if( Operador == 1)
                         {
-                            Console.Write("Valor del paquete (3.000) Movistar ");
-                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago ");
+                            Console.Write("Valor del paquete (3.000) Movistar\n ");
+                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago\n ");
 
                             var Aceptar_pago = Console.ReadLine();
 
@@ -264,8 +263,8 @@ namespace Aplicacion_de_minutos
 
                         else if (Operador == 2)
                         {
-                            Console.Write("Valor del paquete (3.000) Claro ");
-                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago ");
+                            Console.Write("Valor del paquete (3.000) Claro\n ");
+                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago\n ");
 
                             var Aceptar_pago = Console.ReadLine();
 
@@ -291,8 +290,8 @@ namespace Aplicacion_de_minutos
                         int Operador = Convert.ToInt32(Console.ReadLine());
                         if (Operador == 1)
                         {
-                            Console.Write("Valor del paquete (20.000) Movistar ");
-                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago ");
+                            Console.Write("Valor del paquete (20.000) Movistar\n ");
+                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago\n ");
 
                             var Aceptar_pago = Console.ReadLine();
 
@@ -312,8 +311,8 @@ namespace Aplicacion_de_minutos
                         }
                         else if (Operador == 2)
                         {
-                            Console.Write("Valor del paquete (20.000) Claro ");
-                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago ");
+                            Console.Write("Valor del paquete (20.000) Claro\n ");
+                            Console.Write("Ingrese (si) o (no) para aceptar o rechazar el pago\n ");
 
                             var Aceptar_pago = Console.ReadLine();
 
@@ -360,9 +359,9 @@ namespace Aplicacion_de_minutos
 
                     }
 
-                    Console.Write("Seleccione el tipo de paquete");
+                    Console.Write("Seleccione el tipo de paquete\n");
                     Console.Write("(1) Diario");
-                    Console.Write("(2) Mensual");
+                    Console.Write("(2) Mensual\n");
 
                     int Opcion_paquete = Convert.ToInt32(Console.ReadLine());
 
@@ -408,7 +407,7 @@ namespace Aplicacion_de_minutos
                         {
                             Console.Write("Claro");
 
-                            Console.Write("Ingrese el valor de la recarga");
+                            Console.Write("Ingrese el valor de la recarga\n");
 
                             int Valor_Recarga = Convert.ToInt32(Console.ReadLine());
                             int Valor_pauquete = Paquetes.Paquete_Mensual;
@@ -447,7 +446,7 @@ namespace Aplicacion_de_minutos
                         {
                             Console.Write("Movistar");
 
-                            Console.Write("Ingrese el valor de la recarga");
+                            Console.Write("Ingrese el valor de la recarga\n");
 
                             int Valor_Recarga = Convert.ToInt32(Console.ReadLine());
                             int Valor_pauquete = Paquetes.Paquete_Mensual;
